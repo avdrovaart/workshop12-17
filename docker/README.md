@@ -1,9 +1,16 @@
 # Docker omgeving met Java 17
 Deze Dockerfile maakt een nieuwe docker container voor je aan met daarop de early access build van [JDK 17](https://jdk.java.net/17/) op geinstalleerd.
-## Prequisites
+## Prerequisites
 * [Docker](https://docs.docker.com/get-docker/) (Windows/OS X/Linux)
 * Internetverbinding
 * Shell (Powershell, Bash, etc.)
+
+## Notes for Windows:
+* Gebruik powershell om docker te starten, git-bash of de standaard commandline werkt niet.
+* Afhankelijk van de versie van docker op je Windows moet je misschien een extra instelling doen voor de file-sharing. \
+  Zie https://stackoverflow.com/questions/60754297/docker-compose-failed-to-build-filesharing-has-been-cancelled \
+  Geef dan als directory die gedeeld moet worden de directory van deze git repo op.
+* Mogelijk moet je bij het starten ${pwd} gebruiken in je commando i.p.v. $PWD
 
 ## How to install
 * Clone deze directory naar een lokale map op je PC
